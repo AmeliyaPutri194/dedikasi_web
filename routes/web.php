@@ -9,6 +9,8 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::post('/home', [HomeController::class, 'store'])->name('home.store');
+
 
 // Rute untuk admin
 Route::middleware(['role:admin'])->group(function () {

@@ -32,8 +32,9 @@
                 <h5 class="m-0">Tambah Data</h5>
               </div>
               <div class="card-body">
-                <form action="" method="POST">
+                <form action="{{ route('home.store') }}" method="POST">
                   @csrf
+                  <button type="submit" class="btn btn-primary">Submit</button>
                   <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" class="form-control" required>

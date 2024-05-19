@@ -13,7 +13,7 @@
         </div>
     @endif
 
-    <a href="{{ route('fully-funded-premium.create') }}" class="btn btn-primary mb-3">Tambah Data</a>
+    <!-- <a href="{{ route('fully-funded-premium.create') }}" class="btn btn-primary mb-3">Tambah Data</a> -->
 
     <table class="table table-bordered table-striped">
         <thead>

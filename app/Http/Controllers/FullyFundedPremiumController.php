@@ -18,26 +18,26 @@ class FullyFundedPremiumController extends Controller
         return view('fully-funded-premium.create');
     }
 
-    public function store(Request $request)
-    {
-        $request->validate([
-            'email' => 'required|email',
-            'nama_lengkap' => 'required|string',
-            'domisili' => 'required|string',
-            'instansi' => 'required|string',
-            'nomor_whatsapp' => 'required|string',
-            'username_instagram' => 'required|string',
-            'alasan_mengikuti' => 'required|string',
-            'divisi' => 'required|string',
-            'alasan_divisi' => 'required|string',
-            'riwayat_penyakit' => 'nullable|string',
-            'kondisi_lapangan' => 'nullable|string',
-        ]);
+    // public function store(Request $request)
+    // {
+    //     $request->validate([
+    //         'email' => 'required|email',
+    //         'nama_lengkap' => 'required|string',
+    //         'domisili' => 'required|string',
+    //         'instansi' => 'required|string',
+    //         'nomor_whatsapp' => 'required|string',
+    //         'username_instagram' => 'required|string',
+    //         'alasan_mengikuti' => 'required|string',
+    //         'divisi' => 'required|string',
+    //         'alasan_divisi' => 'required|string',
+    //         'riwayat_penyakit' => 'nullable|string',
+    //         'kondisi_lapangan' => 'nullable|string',
+    //     ]);
 
-        FullyFundedPremium::create($request->all());
+    //     FullyFundedPremium::create($request->all());
 
-        return redirect()->route('fully-funded-premium.index')->with('success', 'Data successfully added.');
-    }
+    //     return redirect()->route('fully-funded-premium.index')->with('success', 'Data successfully added.');
+    // }
 
     public function edit($id)
     {
