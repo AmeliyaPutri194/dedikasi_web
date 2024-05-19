@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\FullyFundedPremium;
 
+
 class HomeController extends Controller
 {
     public function __construct()
@@ -42,8 +43,9 @@ class HomeController extends Controller
 
         FullyFundedPremium::create($request->all());
 
-        // Redirect atau beri respons sesuai kebutuhan
         return redirect()->route('home')->with('success', 'Data berhasil disimpan');
     }
+
+    
 }
 
