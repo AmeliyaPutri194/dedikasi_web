@@ -46,6 +46,12 @@ class HomeController extends Controller
         return redirect()->route('home')->with('success', 'Data berhasil disimpan');
     }
 
+    public function datadaftar()
+    {
+        $data = FullyFundedPremium::all();
+        return view('datadaftar', compact('data'));
+    }
+
     
 }
 

@@ -5,11 +5,12 @@ use App\Http\Controllers\FullyFundedPremiumController;
 use App\Http\Controllers\HomeController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
 });
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::post('/home', [HomeController::class, 'store'])->name('home.store');
+Route::post('/home/formpendaftaran', [HomeController::class, 'store'])->name('home.store');
+Route::get('/datadaftar', [HomeController::class, 'datadaftar'])->name('datadaftar');
 
 
 

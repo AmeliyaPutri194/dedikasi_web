@@ -14,7 +14,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Starter Page</li>
+              <li class="breadcrumb-item active">Data Pendaftaran</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -29,12 +29,11 @@
           <div class="col-lg-12">
             <div class="card">
               <div class="card-header">
-                <h5 class="m-0">Tambah Data</h5>
+                <h5 class="m-0">Tambah Data Diri</h5>
               </div>
               <div class="card-body">
                 <form action="{{ route('home.store') }}" method="POST">
                   @csrf
-                  <button type="submit" class="btn btn-primary">Submit</button>
                   <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" class="form-control" required>
