@@ -13,7 +13,7 @@
         </div>
     @endif
 
-    <form action="{{ route('fully-funded-premium.store') }}" method="POST">
+    <form action="{{ route('fully-funded-premium.store') }}" method="POST">  
         @csrf
         <div class="form-group">
             <label for="email">Email:</label>
